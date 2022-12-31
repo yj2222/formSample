@@ -1,0 +1,35 @@
+@use "../valiable" as *;
+
+/* =====================================================
+formSelect
+===================================================== */ 
+.formSelect {
+    border: 1px solid $gray;
+    padding: 1em;
+    padding-right: 2em;
+    outline: none;
+    appearance: none;
+    background: url(/img/arrow_down.svg) calc(100% - .5em) center / auto 30% no-repeat;
+
+    &:focus {
+        background: url(/img/arrow_down.svg) calc(100% - .5em) center / auto 30% no-repeat, $lightColor;
+        border: 1px solid $mainColor;
+    }
+
+    &.is-width100 {
+        width: 100%;
+    }
+
+    &.is-width3em {
+        width: 6em;
+    }
+
+    &.is-width4em {
+        width: 7em;
+    }
+}
+
+
+
+
+

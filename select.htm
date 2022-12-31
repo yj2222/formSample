@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Smaple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    <div id="switch"></div>
+
+    <div class="group container">
+        <form action="">
+            <!-- セレクトボックス[S] -->
+            <div class="formContainer">
+                <h2 class="group" style="text-align: center;">セレクトボックス</h2>
+    
+                <!-- デフォルト[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>デフォルト（文字数によって幅が変わる）</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <select class="formSelect" name="" id="">
+                        <option value="">-- 選択してください --</option>
+                        <option value="formSelect1">formSelect1</option>
+                        <option value="formSelect2">formSelect2</option>
+                    </select>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- デフォルト[E] -->
+
+                <!-- 全幅[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>全幅</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <select class="formSelect is-width100" name="" id="">
+                        <option value="">-- 選択してください --</option>
+                        <option value="formSelect1">formSelect1</option>
+                        <option value="formSelect2">formSelect2</option>
+                    </select>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 全幅[E] -->
+
+                <!-- 横並び 幅指定[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>横並び 幅指定</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex">
+                        <div class="formFlex_item formFlex is-alignFlexEnd">
+                            <select class="formSelect is-width3em" name="" id="">
+                                <option value="">-- 選択してください --</option>
+                                <option value="formSelect1">formSelect1</option>
+                                <option value="formSelect2">formSelect2</option>
+                            </select>
+                            <p class="formFlex_text">年</p>
+                        </div>
+                        <div class="formFlex_item formFlex is-alignFlexEnd">
+                            <select class="formSelect is-width4em" name="" id="">
+                                <option value="">-- 選択してください --</option>
+                                <option value="formSelect1">formSelect1</option>
+                                <option value="formSelect2">formSelect2</option>
+                            </select>
+                            <p class="formFlex_text">月</p>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 横並び 幅指定[E] -->
+
+                <!-- 横並び 全幅 SP縦[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>横並び 全幅 SP縦</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-spColumn">
+                        <div class="formFlex_item formFlex is-alignFlexEnd is-width100">
+                            <select class="formSelect is-width100" name="" id="">
+                                <option value="">----</option>
+                                <option value="formSelect1">formSelect1</option>
+                                <option value="formSelect2">formSelect2</option>
+                            </select>
+                            <p class="formFlex_text">年</p>
+                        </div>
+                        <div class="formFlex_item formFlex is-alignFlexEnd is-width100">
+                            <select class="formSelect is-width100" name="" id="">
+                                <option value="">----</option>
+                                <option value="formSelect1">formSelect1</option>
+                                <option value="formSelect2">formSelect2</option>
+                            </select>
+                            <p class="formFlex_text">月</p>
+                        </div>
+                        <div class="formFlex_item formFlex is-alignFlexEnd is-width100">
+                            <select class="formSelect is-width100" name="" id="">
+                                <option value="">----</option>
+                                <option value="formSelect1">formSelect1</option>
+                                <option value="formSelect2">formSelect2</option>
+                            </select>
+                            <p class="formFlex_text">日</p>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 横並び 全幅 SP縦[E] -->
+            </div>
+            <!-- セレクトボックス[E] -->
+        </form>
+    </div>
+
+    <div class="group container">
+        <h2 class="group" style="text-align: center;">HTML</h2>
+        <script src="https://gist.github.com/yj2222/48d1c91e3a847e684f88dff11c1b74ab.js"></script>
+    </div>
+
+    <footer><p>form sample</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

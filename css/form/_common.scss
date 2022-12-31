@@ -1,0 +1,318 @@
+@use "../valiable" as *;
+
+/* =====================================================
+Reset
+===================================================== */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+input:disabled {
+    background: $lightgray;
+    border: 1px solid $gray;
+}
+
+/* =====================================================
+Utility
+===================================================== */ 
+.group + .group {
+    margin-top: 4em;
+}
+
+.wrap + .wrap {
+    margin-top: 2em;
+}
+
+.container {
+    max-width: 700px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.smallText {
+    font-size: .8em;
+}
+
+.mt-5 {
+    margin-top: .5em;
+}
+
+.ml-5 {
+    margin-left: .5em;
+}
+
+/* =====================================================
+Header
+===================================================== */ 
+header {
+    padding: 1em 0 3em;
+}
+
+/* =====================================================
+switch
+===================================================== */ 
+#switch {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.switchBtn {
+    width: 10em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid $gray;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    
+    p {
+        position: relative;
+        z-index: 10;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 100%;
+        background: $mainColor;
+        z-index: 9;
+        transition: .3s;
+    }
+
+    &.active-01 {
+
+        &::before {
+            margin-left: 0;
+        }
+    }
+
+    &.active-02 {
+
+        &::before {
+            margin-left: calc( (100% / 3) * 1 );
+        }
+    }
+
+    &.active-03 {
+
+        &::before {
+            margin-left: calc( (100% / 3) * 2 );
+        }
+    }
+}
+
+/* =====================================================
+formContainer
+===================================================== */ 
+.formContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid $gray;
+    padding: 2em;
+
+    @media screen and (max-width: 768px) {
+        padding: 1em;
+    }
+}
+
+/* =====================================================
+formLabel
+===================================================== */ 
+.formLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.formLabel_mark {
+    font-size: .8em;
+    font-weight: bold;
+    color: #fff;
+    flex-shrink: 0;
+    margin-left: .5em;
+    padding: .1em .5em;
+}
+
+.formLabel_required {
+    background: $red;
+}
+
+.formLabel_optional {
+    background: $darkgray;
+}
+
+.formLabel_checked {
+    width: 3em;
+    height: 1.7em;
+    background: url(/img/check.svg) center / 40% no-repeat ,green;
+}
+
+.formLabel_btn {
+    margin-left: auto;
+    flex-shrink: 0;    
+
+    a {
+        font-size: .8em;
+        color: $darkgray;
+        display: inline-block;
+        padding: .1em .5em;
+        border: 1px solid $darkgray;
+        margin-left: 10px;
+        transition: .3s;
+
+        &:hover {
+            color: #fff;
+            background: $darkgray;
+        }
+    }
+}
+
+/* =====================================================
+formError
+===================================================== */ 
+.formError_text {
+    display: none;
+    font-size: .9em;
+    color: $red;
+}
+
+.formError {
+
+    .formError_wrap {
+        border: 1px solid $red;
+        padding: 1em;
+        background: $pink;
+    }
+
+    .formError_items {
+
+        .formRadio_label,
+        .formCheckbox_label {
+            border: 1px solid $red;
+            background: $pink;
+        }
+    }
+
+    .formText {
+        border: 1px solid $red;
+        background: $pink;
+    }
+
+    .formSelect {
+        border: 1px solid $red;
+        background-color: $pink;
+    }
+
+    .formError_text {
+        display: block;
+    }
+}
+
+/* =====================================================
+formChecked
+===================================================== */ 
+.formChecked {
+
+    .formLabel_required,
+    .formLabel_optional {
+        display: none;
+    }
+}
+
+/* =====================================================
+formFlex
+===================================================== */ 
+.formFlex {
+    display: flex;
+
+    &.is-width100 {
+        width: 100%;
+    }
+
+    &.is-alignFlexEnd {
+        align-items: flex-end;
+    }
+
+    &.is-alignCenter {
+        align-items: center;
+    }
+
+    .formFlex_item + .formFlex_item {
+        margin-left: .5em;
+    }
+
+    @media screen and (max-width: 768px) {
+        &.is-spColumn {
+            display: block;
+
+            .formFlex_item + .formFlex_item {
+                margin-top: .5em;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.formFlex_text {
+    padding: 0 .5em;
+    font-size: .8em;
+    flex-shrink: 0;
+}
+
+/* =====================================================
+pageList
+===================================================== */ 
+.pageList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100% / 3);
+        border: 1px solid $lightgray;
+    }
+
+    a {
+        display: block;
+        padding: .5em 0;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        background: $darkgray;
+        transition: .3s;
+
+        &:hover {
+            background: $gray;
+            color: $darkgray;
+        }
+    }
+}
+
+.gist .gist-data{
+    max-height: 300px !important;
+}
+
+footer {
+    padding: 3em;
+    text-align: center;
+}

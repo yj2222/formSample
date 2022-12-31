@@ -1,0 +1,91 @@
+@use "../valiable" as *;
+
+// base radio button
+.formRadio {
+    // padding: .2em;
+
+    &.is-width100 {
+        width: 100%;
+    }
+}
+
+.formRadio_input {
+    position: absolute;
+    opacity: 0;
+}
+
+.formRadio_label {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .5em;
+    align-items: center;
+    word-break:break-all;
+    transition: .3s;
+    
+    &::before {
+        content: "";
+        width: 1.2em;
+        height: 1.2em;
+        border: 1px solid $gray;
+        border-radius: 100vh;
+        flex-shrink: 0;
+        transition: .3s;
+    }
+
+    &.is-cardType {
+        border: 1px solid $gray;
+        padding: 1em;
+    
+        &:hover {
+            background: $lightColor;
+            border: 1px solid $mainColor;
+        }
+    }
+
+    &.is-btnColumn {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+// checked
+.formRadio_input:checked {
+
+    + .formRadio_label {
+        
+        &::before {
+            background: orange;
+            box-shadow: inset 0 0 0 .2em #fff;
+            border: 1px solid $mainColor
+        }
+
+        &.is-cardType {
+            background: $lightColor;
+            border: 1px solid $mainColor;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

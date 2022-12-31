@@ -1,0 +1,73 @@
+@use "../valiable" as *;
+
+/* =====================================================
+formSubmit
+===================================================== */ 
+// .formSubmit {
+//     font-size: 1em;
+//     display: block;
+//     padding: 1em;
+//     background: $mainColor;
+//     border: none;
+//     font-weight: bold;
+//     color: #fff;
+//     cursor: pointer;
+//     transition: .3s;
+
+//     &:hover {
+//         background: $lightColor;
+//         color: $mainColor;
+//     }
+// }
+
+.formSubmit {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+}
+
+.btnPrimary {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    background: $mainColor;
+    padding: .7em;
+    border: 1px solid $mainColor;
+
+    &:hover {
+        color: $mainColor;
+        background: $lightColor;
+    }
+}
+
+.btnSecond {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 80%;
+    padding: .7em;
+    border: 1px solid $mainColor;
+    color: $mainColor;
+    background: $lightColor;
+
+    &:hover {
+        color: $mainColor;
+        background: #fff;
+    }
+}
+
+.btnThird {
+    width: 100%;
+    max-width: 300px;
+    padding: .5em 1em;
+    border: 1px solid $darkgray;
+    color: $darkgray;
+    background: #fff;
+
+    &:hover {
+        color: #fff;
+        background: $darkgray;
+    }
+}

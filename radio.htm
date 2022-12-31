@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Smaple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    <div id="switch"></div>
+
+    <div class="group container">
+        <form action="">
+            <!-- ラジオボタン[S] -->
+            <div class="formContainer">
+                <h2 class="group" style="text-align: center;">ラジオボタン</h2>
+    
+                <!-- シンプルなラジオボタン[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>シンプルなラジオボタン</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formError_wrap">
+                        <div class="formRadio">
+                            <input class="formRadio_input" type="radio" name="radioItem" id="radioItem1">
+                            <label class="formRadio_label" for="radioItem1">radioItem1</label>
+                        </div>
+                        <div class="mt-5 formRadio">
+                            <input class="formRadio_input" type="radio" name="radioItem" id="radioItem2">
+                            <label class="formRadio_label" for="radioItem2">radioItem2</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- シンプルなラジオボタン[E] -->
+    
+                <!-- カードタイプのラジオボタン[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>カードタイプのラジオボタン</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                        <div class="formLabel_btn">
+                            <a class="" href="#">詳細はこちら</a>
+                        </div>
+                    </div>
+                    <div class="formFlex formError_items">
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard" id="radioItemCard1">
+                            <label class="formRadio_label is-cardType" for="radioItemCard1">radioItemCard1</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard" id="radioItemCard2">
+                            <label class="formRadio_label is-cardType" for="radioItemCard2">radioItemCard2</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- カードタイプのラジオボタン[E] -->
+    
+                <!-- SPでカラム落ち[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>SPでカラム落ち</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-spColumn formError_items">
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_spColumn" id="radioItemCard_spColumn1">
+                            <label class="formRadio_label is-cardType" for="radioItemCard_spColumn1">radioItemCard_spColumn1</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_spColumn" id="radioItemCard_spColumn2">
+                            <label class="formRadio_label is-cardType" for="radioItemCard_spColumn2">radioItemCard_spColumn2, radioItemCard_spColumn2</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- SPでカラム落ち[E] -->
+    
+                <!-- 3カラム[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>3カラム</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-col3 is-spColumn formError_items">
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_col3" id="radioItemCard_col3_1">
+                            <label class="formRadio_label is-cardType" for="radioItemCard_col3_1">radioItemCard_col3_1</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_col3" id="radioItemCard_col3_2">
+                            <label class="formRadio_label is-cardType" for="radioItemCard_col3_2">radioItemCard_col3_2, radioItemCard_col3_2</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_col3" id="radioItemCard_col3_3">
+                            <label class="formRadio_label is-cardType" for="radioItemCard_col3_3">radioItemCard_col3_3</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 3カラム[E] -->
+    
+                <!-- ボタンとテキストが縦並び[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>ボタンとテキストが縦並び</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-col3 is-spColumn formError_items">
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_btnColumn" id="radioItemCard_btnColumn_1">
+                            <label class="formRadio_label is-cardType is-btnColumn" for="radioItemCard_btnColumn_1">radioItemCard_btnColumn_1</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_btnColumn" id="radioItemCard_btnColumn_2">
+                            <label class="formRadio_label is-cardType is-btnColumn" for="radioItemCard_btnColumn_2">radioItemCard_btnColumn_2radioItemCard_btnColumn_2</label>
+                        </div>
+                        <div class="formFlex_item formRadio is-width100">
+                            <input class="formRadio_input" type="radio" name="radioItemCard_btnColumn" id="radioItemCard_btnColumn_3">
+                            <label class="formRadio_label is-cardType is-btnColumn" for="radioItemCard_btnColumn_3">radioItemCard_btnColumn_3</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- ボタンとテキストが縦並び[E] -->
+            </div>
+            <!-- ラジオボタン[E] -->
+        </form>
+    </div>
+
+    <div class="group container">
+        <h2 class="group" style="text-align: center;">HTML</h2>
+        <script src="https://gist.github.com/yj2222/e7ddbfe9d5370ca1d5a7e6d2d28b8b31.js"></script>
+    </div>
+
+    <footer><p>form sample</p></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Smaple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    <div id="switch"></div>
+
+    <div class="group container">
+        <form action="">
+            <!-- チェックボックス[S] -->
+            <div class="formContainer">
+                <h2 class="group" style="text-align: center;">チェックボックス</h2>
+    
+                <!-- シンプルなチェックボックス[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>シンプルなチェックボックス</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formError_wrap">
+                        <div class="formCheckbox">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxItem" id="checkboxItem1">
+                            <label class="formCheckbox_label" for="checkboxItem1">checkboxItem1</label>
+                        </div>
+                        <div class="mt-5 formCheckbox">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxItem" id="checkboxItem2">
+                            <label class="formCheckbox_label" for="checkboxItem2">checkboxItem2</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- シンプルなチェックボックス[E] -->
+    
+                <!-- カードタイプ[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>カードタイプ</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex formError_items">
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxCard" id="checkboxCard1">
+                            <label class="formCheckbox_label is-cardType" for="checkboxCard1">checkboxCard1</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxCard" id="checkboxCard2">
+                            <label class="formCheckbox_label is-cardType" for="checkboxCard2">checkboxCard2</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- カードタイプ[E] -->
+    
+                <!-- SPでカラム落ち[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>SPでカラム落ち</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-spColumn formError_items">
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxSpColumn" id="checkboxSpColumn1">
+                            <label class="formCheckbox_label is-cardType" for="checkboxSpColumn1">checkboxSpColumn1</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxSpColumn" id="checkboxSpColumn2">
+                            <label class="formCheckbox_label is-cardType" for="checkboxSpColumn2">checkboxSpColumn2</label>
+                        </div>
+                    </div>
+                    
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- SPでカラム落ち[E] -->
+    
+                <!-- 3カラム[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>3カラム</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-spColumn formError_items">
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkbox3Column" id="checkbox3Column1">
+                            <label class="formCheckbox_label is-cardType" for="checkbox3Column1">checkbox3Column1</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkbox3Column" id="checkbox3Column2">
+                            <label class="formCheckbox_label is-cardType" for="checkbox3Column2">checkbox3Column2</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkbox3Column" id="checkbox3Column3">
+                            <label class="formCheckbox_label is-cardType" for="checkbox3Column3">checkbox3Column3</label>
+                        </div>
+                    </div>
+    
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 3カラム[E] -->
+    
+                <!-- ボタンとテキストが縦並[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>ボタンとテキストが縦並</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+    
+                    <div class="formFlex is-spColumn formError_items">
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxBtnColumn" id="checkboxBtnColumn1">
+                            <label class="formCheckbox_label is-cardType is-btnColumn" for="checkboxBtnColumn1">checkboxBtnColumn1</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxBtnColumn" id="checkboxBtnColumn2">
+                            <label class="formCheckbox_label is-cardType is-btnColumn" for="checkboxBtnColumn2">checkboxBtnColumn2</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox is-width100">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxBtnColumn" id="checkboxBtnColumn3">
+                            <label class="formCheckbox_label is-cardType is-btnColumn" for="checkboxBtnColumn3">checkboxBtnColumn3</label>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- ボタンとテキストが縦並[E] -->
+    
+                <!-- ボタンと説明文の2カラム[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>ボタンと説明文の2カラム</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+    
+                    <div class="formFlex is-spColumn formError_items">
+                        <div class="formFlex_item formCheckbox">
+                            <input class="formCheckbox_input" type="checkbox" name="checkboxTextGrid" id="checkboxTextGrid1">
+                            <label class="formCheckbox_label is-cardType" for="checkboxTextGrid1">checkboxTextGrid1</label>
+                        </div>
+                        <div class="formFlex_item formCheckbox_desc">
+                            <p>サンプルテキスト、サンプルテキスト。</p>
+                            <p class="smallText mt-5">サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- ボタンと説明文の2カラム[E] -->
+            </div>
+            <!-- チェックボックス[E] -->
+        </form>
+    </div>
+
+    <div class="group container">
+        <h2 class="group" style="text-align: center;">HTML</h2>
+        <script src="https://gist.github.com/yj2222/ee40a45e9765f7f54e7ac21bcd9cfe49.js"></script>
+    </div>
+    
+    <footer><p>form sample</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

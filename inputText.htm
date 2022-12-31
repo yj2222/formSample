@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Smaple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    <div id="switch"></div>
+
+    <div class="group container">
+        <form action="">
+            <!-- 入力フォーム[S] -->
+            <div class="formContainer">
+                <h2 class="group" style="text-align: center;">入力フォーム</h2>
+    
+                <!-- シンプルな入力フォーム[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>シンプルな入力フォーム</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <input class="formText" type="text" name="" id="" placeholder="サンプルテキスト。">
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- シンプルな入力フォーム[E] -->
+
+                <!-- 3,4文字 間にハイフン[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>3,4文字 間にハイフン</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-alignCenter">
+                        <input class="formText is-width3em" type="text" name="" id="" placeholder="123" maxlength="3">
+                        <div class="formText_hyphen"></div>
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 3,4文字 間にハイフン[E] -->
+
+                <!-- 4,4,4文字 間にハイフン[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>4,4,4文字 間にハイフン</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-alignCenter">
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                        <div class="formText_hyphen"></div>
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                        <div class="formText_hyphen"></div>
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 4,4,4文字 間にハイフン[E] -->
+
+                <!-- 3,4文字 + ボタン[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>3,4文字 + ボタン</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-alignCenter">
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="123" maxlength="3">
+                        <div class="formText_hyphen"></div>
+                        <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                        <button class="formSubmit btnPrimary formText_submit" type="submit">検索開始</button>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 3,4文字 + ボタン[E] -->
+
+                <!-- 5,4文字 間に文字[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>5,4文字 間に文字</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex">
+                        <div class="formFlex_item formFlex is-alignFlexEnd">
+                            <input class="formText is-width5em" type="text" name="" id="" placeholder="12345" maxlength="5">
+                            <div class="formFlex_text">番地</div>
+                        </div>
+                        <div class="formFlex_item formFlex is-alignFlexEnd">
+                            <input class="formText is-width4em" type="text" name="" id="" placeholder="1234" maxlength="4">
+                            <div class="formFlex_text">号</div>
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- 5,4文字 間に文字[E] -->
+
+                <!-- インライン半々 先頭文字[S] -->
+                <div class="group js-formGroup">
+                    <div class="formLabel">
+                        <p>インライン半々 先頭文字</p>
+                        <p class="formLabel_mark formLabel_checked"></p>
+                        <p class="formLabel_mark formLabel_required">必須</p>
+                        <p class="formLabel_mark formLabel_optional">任意</p>
+                    </div>
+                    <div class="formFlex is-spColumn is-width100">
+                        <div class="formFlex_item formFlex is-alignCenter is-width100">
+                            <div class="formFlex_text">姓　</div>
+                            <input class="formText" type="text" name="" id="" placeholder="何斗華" maxlength="16">
+                        </div>
+                        <div class="formFlex_item formFlex is-alignCenter is-width100">
+                            <div class="formFlex_text">名　</div>
+                            <input class="formText" type="text" name="" id="" placeholder="冠兎香" maxlength="16">
+                        </div>
+                    </div>
+                    <div class="mt-5 formFlex is-spColumn">
+                        <div class="formFlex_item formFlex is-alignCenter is-width100">
+                            <div class="formFlex_text">セイ</div>
+                            <input class="formText" type="text" name="" id="" placeholder="ナントカ" maxlength="16">
+                        </div>
+                        <div class="formFlex_item formFlex is-alignCenter is-width100">
+                            <div class="formFlex_text">メイ</div>
+                            <input class="formText" type="text" name="" id="" placeholder="カントカ" maxlength="16">
+                        </div>
+                    </div>
+                    <ul class="formError_text">
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                        <li>エラーテキストエラーテキストエラーテキストエラーテキストエラーテキスト</li>
+                    </ul>
+                </div>
+                <!-- インライン半々 先頭文字[E] -->
+
+                <!-- 編集不可状態[S] -->
+                <div class="group">
+                    <div class="formLabel">
+                        <p>編集不可状態</p>
+                    </div>
+                    <input class="formText" type="text" name="" id="" placeholder="サンプルテキスト。" disabled>
+                </div>
+                <!-- 編集不可状態[E] -->
+            </div>
+            <!-- 入力フォーム[E] -->
+        </form>
+    </div>
+    
+    <div class="group container">
+        <h2 class="group" style="text-align: center;">HTML</h2>
+        <script src="https://gist.github.com/yj2222/17944e2a9186dff5bda629f3c123bd3e.js"></script>
+    </div>
+
+    <footer><p>form sample</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

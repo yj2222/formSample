@@ -1,0 +1,551 @@
+/* =====================================================
+Reset
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+input:disabled {
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+/* =====================================================
+Utility
+===================================================== */
+.group + .group {
+  margin-top: 4em;
+}
+
+.wrap + .wrap {
+  margin-top: 2em;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.smallText {
+  font-size: 0.8em;
+}
+
+.mt-5 {
+  margin-top: 0.5em;
+}
+
+.ml-5 {
+  margin-left: 0.5em;
+}
+
+/* =====================================================
+Header
+===================================================== */
+header {
+  padding: 1em 0 3em;
+}
+
+/* =====================================================
+switch
+===================================================== */
+#switch {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.switchBtn {
+  width: 10em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  background: #fff;
+}
+.switchBtn p {
+  position: relative;
+  z-index: 10;
+}
+.switchBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.3333333333%;
+  height: 100%;
+  background: #ffa500;
+  z-index: 9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.switchBtn.active-01::before {
+  margin-left: 0;
+}
+.switchBtn.active-02::before {
+  margin-left: 33.3333333333%;
+}
+.switchBtn.active-03::before {
+  margin-left: 66.6666666667%;
+}
+
+/* =====================================================
+formContainer
+===================================================== */
+.formContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 2em;
+}
+@media screen and (max-width: 768px) {
+  .formContainer {
+    padding: 1em;
+  }
+}
+
+/* =====================================================
+formLabel
+===================================================== */
+.formLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.formLabel_mark {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 0.5em;
+  padding: 0.1em 0.5em;
+}
+
+.formLabel_required {
+  background: #e70000;
+}
+
+.formLabel_optional {
+  background: #777;
+}
+
+.formLabel_checked {
+  width: 3em;
+  height: 1.7em;
+  background: url(/img/check.svg) center/40% no-repeat, green;
+}
+
+.formLabel_btn {
+  margin-left: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.formLabel_btn a {
+  font-size: 0.8em;
+  color: #777;
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  border: 1px solid #777;
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formLabel_btn a:hover {
+  color: #fff;
+  background: #777;
+}
+
+/* =====================================================
+formError
+===================================================== */
+.formError_text {
+  display: none;
+  font-size: 0.9em;
+  color: #e70000;
+}
+
+.formError .formError_wrap {
+  border: 1px solid #e70000;
+  padding: 1em;
+  background: #fffcfc;
+}
+.formError .formError_items .formRadio_label,
+.formError .formError_items .formCheckbox_label {
+  border: 1px solid #e70000;
+  background: #fffcfc;
+}
+.formError .formText {
+  border: 1px solid #e70000;
+  background: #fffcfc;
+}
+.formError .formSelect {
+  border: 1px solid #e70000;
+  background-color: #fffcfc;
+}
+.formError .formError_text {
+  display: block;
+}
+
+/* =====================================================
+formChecked
+===================================================== */
+.formChecked .formLabel_required,
+.formChecked .formLabel_optional {
+  display: none;
+}
+
+/* =====================================================
+formFlex
+===================================================== */
+.formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.formFlex.is-width100 {
+  width: 100%;
+}
+.formFlex.is-alignFlexEnd {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.formFlex.is-alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formFlex .formFlex_item + .formFlex_item {
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 768px) {
+  .formFlex.is-spColumn {
+    display: block;
+  }
+  .formFlex.is-spColumn .formFlex_item + .formFlex_item {
+    margin-top: 0.5em;
+    margin-left: 0;
+  }
+}
+
+.formFlex_text {
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+/* =====================================================
+pageList
+===================================================== */
+.pageList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pageList li {
+  width: 33.3333333333%;
+  border: 1px solid #fafafa;
+}
+.pageList a {
+  display: block;
+  padding: 0.5em 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background: #777;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.pageList a:hover {
+  background: #ccc;
+  color: #777;
+}
+
+.gist .gist-data {
+  max-height: 300px !important;
+}
+
+footer {
+  padding: 3em;
+  text-align: center;
+}
+
+/* =====================================================
+formSubmit
+===================================================== */
+.formSubmit {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btnPrimary {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  background: #ffa500;
+  padding: 0.7em;
+  border: 1px solid #ffa500;
+}
+.btnPrimary:hover {
+  color: #ffa500;
+  background: #fff7e8;
+}
+
+.btnSecond {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 80%;
+  padding: 0.7em;
+  border: 1px solid #ffa500;
+  color: #ffa500;
+  background: #fff7e8;
+}
+.btnSecond:hover {
+  color: #ffa500;
+  background: #fff;
+}
+
+.btnThird {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5em 1em;
+  border: 1px solid #777;
+  color: #777;
+  background: #fff;
+}
+.btnThird:hover {
+  color: #fff;
+  background: #777;
+}
+
+.formRadio.is-width100 {
+  width: 100%;
+}
+
+.formRadio_input {
+  position: absolute;
+  opacity: 0;
+}
+
+.formRadio_label {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-break: break-all;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formRadio_label::before {
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 100vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formRadio_label.is-cardType {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+.formRadio_label.is-cardType:hover {
+  background: #fff7e8;
+  border: 1px solid #ffa500;
+}
+.formRadio_label.is-btnColumn {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.formRadio_input:checked + .formRadio_label::before {
+  background: orange;
+  -webkit-box-shadow: inset 0 0 0 0.2em #fff;
+          box-shadow: inset 0 0 0 0.2em #fff;
+  border: 1px solid #ffa500;
+}
+.formRadio_input:checked + .formRadio_label.is-cardType {
+  background: #fff7e8;
+  border: 1px solid #ffa500;
+}
+
+/* =====================================================
+formCheckbox
+===================================================== */
+.formCheckbox.is-width100 {
+  width: 100%;
+}
+
+.formCheckbox_input {
+  position: absolute;
+  opacity: 0;
+}
+
+.formCheckbox_label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  word-break: break-all;
+}
+.formCheckbox_label::before {
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.formCheckbox_label.is-cardType {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+.formCheckbox_label.is-cardType:hover {
+  background: #fff7e8;
+  border: 1px solid #ffa500;
+}
+.formCheckbox_label.is-btnColumn {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.formCheckbox_input:checked + .formCheckbox_label::before {
+  background: url(/img/check.svg) center/70% no-repeat, #ffa500;
+  border: 1px solid #ffa500;
+}
+.formCheckbox_input:checked + .formCheckbox_label.is-cardType {
+  background: #fff7e8;
+  border: 1px solid #ffa500;
+}
+
+.formCheckbox_desc {
+  max-width: 400px;
+  padding-left: 0.5em;
+}
+
+/* =====================================================
+formText
+===================================================== */
+.formText {
+  border: 1px solid #ccc;
+  padding: 1em;
+  outline: none;
+  width: 100%;
+}
+.formText:focus {
+  background: #fff7e8;
+  border: 1px solid #ffa500;
+}
+.formText.is-width3em {
+  width: 3.8em;
+}
+.formText.is-width4em {
+  width: 4.4em;
+}
+.formText.is-width5em {
+  width: 4.9em;
+}
+.formText:disabled {
+  cursor: not-allowed;
+}
+
+.formText_box {
+  padding: 0.2em;
+}
+
+.formText_hyphen {
+  width: 0.5em;
+  height: 2px;
+  background: #ccc;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 0.5em;
+}
+
+.formText_submit {
+  font-size: 1em;
+  margin-left: 1em;
+  width: auto;
+}
+
+/* =====================================================
+formSelect
+===================================================== */
+.formSelect {
+  border: 1px solid #ccc;
+  padding: 1em;
+  padding-right: 2em;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(/img/arrow_down.svg) calc(100% - 0.5em) center/auto 30% no-repeat;
+}
+.formSelect:focus {
+  background: url(/img/arrow_down.svg) calc(100% - 0.5em) center/auto 30% no-repeat, #fff7e8;
+  border: 1px solid #ffa500;
+}
+.formSelect.is-width100 {
+  width: 100%;
+}
+.formSelect.is-width3em {
+  width: 6em;
+}
+.formSelect.is-width4em {
+  width: 7em;
+}
+
+/* =====================================================
+formConfirm
+===================================================== */
+.formConfirm_wrap {
+  background: #eee;
+  padding: 2em;
+}
+
+.formConfirm_item + .formConfirm_item {
+  margin-top: 0.5em;
+}

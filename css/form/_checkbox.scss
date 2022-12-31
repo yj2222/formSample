@@ -1,0 +1,83 @@
+@use "../valiable" as *;
+
+/* =====================================================
+formCheckbox
+===================================================== */ 
+.formCheckbox {
+    // padding: .2em;
+
+    &.is-width100 {
+        width: 100%;
+    }
+}
+
+.formCheckbox_input {
+    position: absolute;
+    opacity: 0;
+}
+
+.formCheckbox_label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: .5em;
+    word-break:break-all;
+
+    &::before {
+        content: "";
+        width: 1.2em;
+        height: 1.2em;
+        border: 1px solid $gray;
+        transition: .3s;
+    }
+
+    &.is-cardType {
+        border: 1px solid $gray;
+        padding: 1em;
+    
+        &:hover {
+            background: $lightColor;
+            border: 1px solid $mainColor;
+        }
+    }
+
+    &.is-btnColumn {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+// checked
+.formCheckbox_input:checked {
+
+    + .formCheckbox_label {
+    
+        &::before {
+            background: url(/img/check.svg) center / 70% no-repeat, $mainColor;
+            border: 1px solid $mainColor
+        }
+
+        &.is-cardType {
+            background: $lightColor;
+            border: 1px solid $mainColor;
+        }
+    }
+}
+
+.formCheckbox_desc {
+    max-width: 400px;
+    padding-left: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+

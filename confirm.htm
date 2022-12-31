@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Smaple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    
+    <div class="group container">
+        <form action="">
+            <!-- デフォルト[S] -->
+            <div class="group">
+                <div class="formLabel">
+                    <p>編集不可状態</p>
+                </div>
+                <input class="formText" type="text" name="" id="" placeholder="サンプルテキスト。" disabled>
+            </div>
+            <!-- デフォルト[E] -->
+
+            <div class="group">
+                <button class="formSubmit btnThird" type="submit" formaction="">遷移先→formactionを変更</button>
+            </div>
+            
+            <!-- 複数項目の場合[S] -->
+            <div class="group">
+                <div class="formLabel">
+                    <p>複数項目の場合</p>
+                </div>
+                <div class="formConfirm_wrap">
+                    <div class="wrap">
+                        <div class="formLabel">
+                            <p>編集不可状態</p>
+                        </div>
+                        <input class="formText" type="text" name="" id="" placeholder="サンプルテキスト。" disabled>
+                    </div>
+                    <div class="wrap">
+                        <div class="formLabel">
+                            <p>編集不可状態</p>
+                        </div>
+                        <input class="formText" type="text" name="" id="" placeholder="サンプルテキスト。" disabled>
+                    </div>
+                </div>
+            </div>
+            <!-- 複数項目の場合[E] -->
+
+            <div class="group">
+                <button class="formSubmit btnThird" type="submit" formaction="">遷移先→formactionを変更</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="group container">
+        <h2 class="group" style="text-align: center;">HTML</h2>
+        <script src="https://gist.github.com/yj2222/0c844b0b935d8aca2015ccd42ab386de.js"></script>
+    </div>
+
+    <footer><p>form sample</p></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
