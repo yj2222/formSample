@@ -56,11 +56,33 @@ Utility
     margin-left: .5em;
 }
 
+.textSmall {
+    font-size: .8em;
+}
+
 /* =====================================================
 Header
 ===================================================== */ 
 header {
     padding: 1em 0 3em;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.githubLink {
+    display: flex;
+    align-items: center;
+    color: $darkgray;
+    text-decoration: none;
+
+    i {
+        font-size: 1.5em;
+        margin-right: .1em;
+    }
 }
 
 /* =====================================================

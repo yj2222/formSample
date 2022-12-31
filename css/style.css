@@ -56,11 +56,42 @@ Utility
   margin-left: 0.5em;
 }
 
+.textSmall {
+  font-size: 0.8em;
+}
+
 /* =====================================================
 Header
 ===================================================== */
 header {
   padding: 1em 0 3em;
+}
+
+.header_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.githubLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #777;
+  text-decoration: none;
+}
+.githubLink i {
+  font-size: 1.5em;
+  margin-right: 0.1em;
 }
 
 /* =====================================================
